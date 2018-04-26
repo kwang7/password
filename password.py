@@ -33,14 +33,19 @@ print (superCheck("KELY"))
 
 
 def rate(p):
-    c = len(p)/4;
+    c = len(p)/4.0;
 
     ups = checkUpper(p);
     lows = checkLower(p);
     nums = checkNum(p);
     symbs = checkSymb(p);
 
-    return math.fabs( len(ups)-c ) + math.fabs( len(lows)-c) + math.fabs(len(nums) - c ) + math.fabs( len(symbs) -c ) ;
+    #the lower the number the stronger the password is
+    return (math.fabs( len(ups)-c ) + math.fabs( len(lows)-c) + math.fabs(len(nums) - c ) + math.fabs( len(symbs) -c )) /c ;
 
-print(rate("KELly"))
-    
+print(rate("KELlLLL14346Lada!!!!!sy"))
+print(rate("KELLwang"))
+print(rate("KL"))
+print(rate("Ke2!"))
+print(rate("LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL"))
+
