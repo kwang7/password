@@ -1,3 +1,8 @@
+#Kelly WANG
+#SoftDev2 pd7
+#K15 -- Do You Even List?
+#2018-04-25
+
 import math
 
 UC = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
